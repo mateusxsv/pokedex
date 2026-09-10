@@ -3,26 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokédex</title>
+    <title>Pokédex Skaoz</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="pokedex\media\omori.png">
+    
 </head>
 
 <body>
 
     <header>
-        <h1>Pokédex</h1>
+
+        <h1>Pokédex Skaoz</h1>
+
         <p>20 Pokémon aleatórios!</p>
 
         <button onclick="carregarPokemons()">
             Gerar novos Pokémon
         </button>
+
     </header>
 
+
     <main>
+
         <div class="grid" id="pokemons">
             Carregando Pokémon...
         </div>
+
     </main>
+
+    <div class="camera" id="camera">
+
+        <div class="camera-conteudo">
+
+            <h2 id="pokemonCamera">
+                Capturar Pokémon
+            </h2>
+
+            <video id="video" autoplay></video>
+
+            <br>
+
+            <button onclick="tirarFoto()">
+                📸 Tirar foto
+            </button>
+
+            <button onclick="fecharCamera()">
+                Fechar
+            </button>
+
+            <canvas id="canvas" style="display: none;"></canvas>
+
+            <div class="foto-capturada" id="fotoCapturada"></div>
+
+        </div>
+
+    </div>
+
 
     <script src="script.js"></script>
 

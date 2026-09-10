@@ -1,0 +1,10 @@
+{
+    "name": "Pokedex Skaoz",
+    "short_name": "Pokedex Skaoz",
+    "description": "Uma Pokédex com Pokémon aleatórios e captura usando a câmera.",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#31256c",
+    "theme_color": "#31256c",
+    "orientation": "portrait"
+}
